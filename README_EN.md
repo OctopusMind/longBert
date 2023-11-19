@@ -24,11 +24,12 @@ Based on bert-base-chinese, it changes the original BERT positional encoding to 
 
 ### Usage
 ```python
-from transformers import AutoModel
-from numpy.linalg import norm
 
+from numpy.linalg import norm
+from transformers import AutoModel
+model_path = "OctopusMind/LongBert"
+model = AutoModel.from_pretrained(model_path, trust_remote_code=True)
 cos_sim = lambda a,b: (a @ b.T) / (norm(a)*norm(b))
-model = AutoModel.from_pretrained('OctopusMind/LongBert', trust_remote_code=True) 
 embeddings = model.encode(['How is the weather today?', 'Do you think the weather is good now?'])
 print(cos_sim(embeddings[0], embeddings[1]))
 ```

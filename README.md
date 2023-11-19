@@ -24,11 +24,11 @@
 
 ### 使用
 ```python
-from transformers import AutoModel
 from numpy.linalg import norm
-
+from transformers import AutoModel
+model_path = "OctopusMind/LongBert"
+model = AutoModel.from_pretrained(model_path, trust_remote_code=True)
 cos_sim = lambda a,b: (a @ b.T) / (norm(a)*norm(b))
-model = AutoModel.from_pretrained('OctopusMind/LongBert', trust_remote_code=True) 
 embeddings = model.encode(['今天天气怎么样？', '你觉得现在天气好吗'])
 print(cos_sim(embeddings[0], embeddings[1]))
 
