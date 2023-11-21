@@ -26,7 +26,7 @@
 ```python
 from numpy.linalg import norm
 from transformers import AutoModel
-model_path = "OctopusMind/LongBert"
+model_path = "OctopusMind/longbert-8k-zh"
 model = AutoModel.from_pretrained(model_path, trust_remote_code=True)
 cos_sim = lambda a,b: (a @ b.T) / (norm(a)*norm(b))
 embeddings = model.encode(['今天天气怎么样？', '你觉得现在天气好吗'])
