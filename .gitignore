@@ -3,9 +3,13 @@
 .DS_Store
 .ipynb_checkpoints
 .pytest_cache
+.run
 
+temp
 
 model/
+outputs/
+scripts/
 my_tests.py
 
 # Byte-compiled / optimized / DLL files
