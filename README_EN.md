@@ -67,8 +67,8 @@ cd train/
 ```
 ```bash
 python cosent_finetune.py \
-        --data_dir ../data/sts-b.json \
-        --output_dir ./outputs/STS-B-model \
+        --data_dir ../data/train_data.json \
+        --output_dir ./outputs/my-model \
         --max_seq_length 1024 \
         --num_epochs 10 \
         --batch_size 64 \
