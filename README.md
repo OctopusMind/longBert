@@ -20,7 +20,7 @@
 
 ### News
 * 支持`CoSENT`微调
-* 模型已上传至 [Huggingface](https://huggingface.co/OctopusMind/LongBert)
+* 模型已上传至 [Huggingface](https://huggingface.co/OctopusMind/longbert-8k-zh)
 
 
 ### 使用
