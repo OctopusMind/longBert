@@ -20,7 +20,7 @@ Based on bert-base-chinese, it changes the original BERT positional encoding to 
 
 ### News
 * Support `CoSENT` fine-tuning. see [train folder](./train)
-* The model has been uploaded to [Huggingface](https://huggingface.co/OctopusMind/LongBert)
+* The model has been uploaded to [Huggingface](https://huggingface.co/OctopusMind/longbert-8k-zh)
 
 
 ### Usage
